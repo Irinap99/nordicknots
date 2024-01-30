@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/nordic-knots-192x192icon.png" />
+    <link rel="apple-touch-icon" href="img/nordic-knots-192x192icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500&family=Noto+Sans:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Knit Fashion</title>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo-box">
+        <a href="index.html"><img src="img/logo.png" alt="nordic knots logo" class="header__logo" /></a>
+      </div>
+      <ul class="header__links">
+        <li class="header__link"><a href="knit-fashion.html">Knit Fashion</a></li>
+        <li class="header__link"><a href="home-and-living.html">Home & Living</a></li>
+        <li class="header__link"><a href="heritage.html">Our heritage</a></li>
+      </ul>
+      <div class="header__user-links">
+        <a href="#" class="header__user-link login-btn">Login</a>
+        <i class="ph-thin ph-shopping-cart-simple header__icon"></i>
+      </div>
+    </header>
+    <div class="popup hidden">
+     <div class="popup__box">
+      <div class="popup__header">
+      <h3 class="popup__header-text">Login</h3>
+      <i class="ph-light ph-x popup__header-icon"></i>
+      </div>
+      <div class="popup__login">
+      <input class="popup__input" type="text" name="username" placeholder="Enter your email" required>
+      <input class="popup__input" type="password" name="password" placeholder="Password" required>
+      <a href="#" class="popup__forgotten">Forgot your password?</a>
+      <input class="popup__btn" type="submit" value="Login">
+      <p>Don't have an account? <a href="#">Sign up now!</a></p>
+    </div>
+     </div>
+    </div>
+    <section class="knit-fashion">
+      <div class="knit-fashion__container">
+        <div class="knit-fashion__collage">
+          
+          <h1 class="knit-fashion__heading">A Palette of Possibilities: <br>Your Wardrobe, Your Way</h1>
+          <a href="#" class="knit-fashion__cta">Shop now!</a>
+          <div class="knit-fashion__img-box">
+            <img
+              class="knit-fashion__img"
+              src="img/knit-fashion/knitwear-cover.jpg"
+              alt="collage image of people wearing sweaters"
+            />
+            <div class="knit-fashion__overlay"></div>
+          </div>
+        </div>
+        
+    </section>
+    <section class="bestsellers">
+      <div class="bestsellers__heading">
+        <h2>Bestsellers</h2>
+      </div>
+      <div class="bestsellers__gallery">
+      <figure class="bestsellers__item">
+        <div class="bestsellers__details">
+          <h4>Emerald Elegance</h4>
+        <ul>
+          <li>&mdash; Flattering fit that embraces style and comfort</li>
+          <li>&mdash; Vibrant color & timeless knit craftsmanship </li>
+          <li>&mdash;  Impeccable comfort in every thread.</li>
+        </ul>
+        <h3 class="bestsellers__price"> <p>50 eur </p>  <a href="#"> <i class="ph-thin ph-shopping-cart-simple bestsellers__icon"></i>Add to cart </a></h3>
+        </div>
+        <div class="bestsellers__img">
+        <img src="img/knit-fashion/bestseller-sweater.jpg" alt="emerald green sweater">
+        </div>
+      </figure>
+      <figure class="bestsellers__item bestsellers__item--bottom">
+        <div class="bestsellers__details bestsellers__details--bottom">
+          <h4> Wooly Bunny Socks</h4>
+        <ul>
+          <li>&mdash; Elevate your indoor wardrobe with comfort and style</li>
+          <li>&mdash; High-quality wool blend for maximum comfort </li>
+          <li>&mdash; Secure and non-slip sole, designed for stability </li>
+        </ul>
+        <h3 class="bestsellers__price bestsellers__price--bottom"> <p>15 eur </p>  <a href="#"> <i class="ph-thin ph-shopping-cart-simple bestsellers__icon"></i>Add to cart </a></h3>
+        </div>
+        <div class="bestsellers__img">
+        <img src="img/knit-fashion/erik-mclean-iyqnSGGRPpg-unsplash.jpg" alt="wooly white socks with bunny model">
+        </div>
+      </figure>
+      <figure class="bestsellers__item">
+        <div class="bestsellers__details">
+          <h4>Evergreen beanie</h4>
+          <ul>
+            <li>&mdash; Timeless winter hat with a classic knit pattern</li>
+            <li>&mdash; Perfect accessory for cold days </li>
+            <li>&mdash; Designed for durability and warmth</li>
+          </ul>
+          <h3 class="bestsellers__price"> <p>10 eur </p>  <a href="#"> <i class="ph-thin ph-shopping-cart-simple bestsellers__icon"></i>Add to cart </a></h3>
+        </div>
+        <div class="bestsellers__img">
+        <img src="img/knit-fashion/jordan-whitfield-Lprffwrv9cY-unsplash.jpg" alt="green knitted beanie">
+        </div>
+      </figure>
+      </div>
+    </section>
+    <section class="collections">
+
+      <div class="collections__box">
+        <div class="collections__img-container collections__img-container--knit-fashion collections__img-container--limited ">
+      <div class="collections__limited-text-box">
+          <h2 class="collections__limited-secondary-title">FW collection &Vert; 2023</h2>
+          <h3 class="collections__limited-title">Limited Collection</h3>
+          <p class ="collections__limited-text">Embrace the changing seasons with our latest arrivals &mdash; the Fall/Winter Limited Collection. <br>Immerse yourself in a world of warmth, style, and sophistication as we unveil a carefully <br>curated selection of fashion-forward pieces designed for the season ahead.</p>
+          <div class="collections__limited-btn"><a href="#">Explore more</a></div>
+          </div>
+          <div class="collections__img-overlay"></div>
+      </div>
+      <div class="collections__img-container">
+        <h3 class="collections__title">For Her</h3>
+        <div class="collections__img-overlay"></div>
+        <img src="img/knit-fashion/women.jpg"
+        class="collections__img" alt="women collections">
+     
+      </div>
+      <div class="collections__img-container">
+        <h3 class="collections__title">For Him</h3>
+        <div class="collections__img-overlay"></div>
+        <img src="img/knit-fashion/men.jpg"
+        class="collections__img" alt="men collections">
+      </div>
+      <div class="collections__img-container">
+        <h3 class="collections__title">For Kids</h3>
+        <div class="collections__img-overlay"></div>
+        <img src="img/knit-fashion/kids.jpg"
+        class="collections__img" alt="kids collections">
+      </div>
+      <div class="collections__img-container">
+        <h3 class="collections__title">Accessories</h3>
+        <div class="collections__img-overlay"></div>
+        <img src="img/knit-fashion/accessories.jpg"
+        class="collections__img" alt="knit accessories">
+      </div>
+
+      </div>
+    </section>
+
+    
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__left-box">
+          <img
+            src="img/logo-footer.png"
+            alt="nordic knots footer logo"
+            class="footer__img"
+          />
+          <div class="footer__icon-box">
+            <a href="#">
+              <i class="ph-light ph-instagram-logo footer__icon"></i
+            ></a>
+            <a href="#"
+              ><i class="ph-light ph-facebook-logo footer__icon"></i
+            ></a>
+          </div>
+          <div class="footer__copyright">
+            <p>
+              &copy; Putinei Andreea-Irina 2023 | Website design, website
+              template and logo design were made by Putinei Andreea-Irina.
+            </p>
+          </div>
+        </div>
+        <ul class="footer__link-box">
+          <li><a class="footer__link" href="#">About Us</a></li>
+          <li><a class="footer__link" href="#">Collections</a></li>
+          <li><a class="footer__link" href="#">Stores & Showroom</a></li>
+          <li><a class="footer__link" href="#">Costumer Service</a></li>
+          <li><a class="footer__link" href="#">Shipping & Delivery</a></li>
+          <li><a class="footer__link" href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

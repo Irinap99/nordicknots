@@ -1,0 +1,14 @@
+{
+  "name": "knitwear-project",
+  "version": "1.0.0",
+  "description": "Knitwear project for web design",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "author": "Irina",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

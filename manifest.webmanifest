@@ -1,0 +1,14 @@
+{
+  "icons": [
+    {
+      "src": "img/nordic-knots-192x192icon",
+      "type": "img/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "img/nordic-knots-364x329icon.png",
+      "type": "img/png",
+      "sizes": "192x192"
+    }
+  ]
+}

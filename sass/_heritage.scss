@@ -1,0 +1,209 @@
+.heritage {
+  &__container {
+    max-width: 100vw;
+  }
+
+  &__collage {
+    display: flex;
+
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    background-color: $teal-dark;
+    height: 50rem;
+  }
+
+  &__img-box {
+    width: 25%;
+    height: 50rem;
+    overflow: hidden;
+    position: relative;
+  }
+  &__img {
+    display: block;
+    height: 100%;
+    transform: translateX(-15rem);
+    animation: Opacity 1500ms;
+    // &--1 {
+    //   animation: Opacity 1000ms;
+    // }
+    // &--2 {
+    //   animation: Opacity 1500ms;
+    // }
+    // &--3 {
+    //   animation: Opacity 2000ms;
+    // }
+    // &--4 {
+    //   animation: Opacity 2500ms;
+    // }
+  }
+  &__overlay {
+    @include overlay;
+    background-color: rgba($teal-dark-3, 0.8);
+  }
+
+  &__heading {
+    position: absolute;
+    z-index: 999;
+    color: $beige-secondary;
+    text-transform: uppercase;
+    font-size: 6rem;
+    font-weight: 200;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    animation: Opacity 1500ms;
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 5rem;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 4rem;
+    }
+  }
+
+  &__info:first-child {
+    padding-top: 6rem;
+  }
+
+  &__info {
+    background-color: $teal-dark-3;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__info-element {
+    max-width: 90vw;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem auto;
+    border-bottom: 0.5px solid rgba($beige-secondary, 0.5);
+    @media only screen and (max-width: $bp-smallest) {
+      flex-direction: column;
+      max-width: 100vw;
+      padding: 2rem;
+    }
+
+    &--left {
+      flex-direction: row-reverse;
+      @media only screen and (max-width: $bp-smallest) {
+        flex-direction: column;
+      }
+    }
+  }
+  &__info-element:last-child {
+    margin: 0 auto;
+    border: none;
+  }
+  &__info-element:first-child {
+    margin: 0 auto;
+    border-top: 0.5px solid rgba($beige-secondary, 0.5);
+  }
+  &__info-img-box {
+    width: 40%;
+
+    img {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+  &__info-txt-box {
+    color: $beige-secondary;
+    font-family: $font-main;
+    width: 60%;
+    @media only screen and (max-width: $bp-smallest) {
+      width: 100%;
+    }
+
+    h1 {
+      color: #adc2c1;
+      font-weight: 300;
+      font-size: 1.8rem;
+      text-align: center;
+      margin-bottom: 0.2rem;
+      letter-spacing: 1.5px;
+      @media only screen and (max-width: $bp-large) {
+        font-size: 1.6rem;
+      }
+      @media only screen and (max-width: $bp-medium) {
+        font-size: 1.4rem;
+      }
+      @media only screen and (max-width: $bp-smallest) {
+        font-size: 1.2rem;
+      }
+    }
+
+    h2 {
+      text-transform: uppercase;
+      font-weight: 200;
+      font-size: 5rem;
+      margin-bottom: 2rem;
+      @media only screen and (max-width: $bp-large) {
+        font-size: 3rem;
+      }
+      @media only screen and (max-width: $bp-medium) {
+        font-size: 2rem;
+      }
+      @media only screen and (max-width: $bp-small) {
+        font-size: 1.8rem;
+      }
+      @media only screen and (max-width: $bp-smallest) {
+        font-size: 1.4rem;
+      }
+    }
+    p {
+      font-size: 1.6rem;
+      @media only screen and (max-width: $bp-large) {
+        font-size: 1.4rem;
+      }
+      @media only screen and (max-width: $bp-medium) {
+        font-size: 1.2rem;
+      }
+      @media only screen and (max-width: $bp-smallest) {
+        font-size: 1rem;
+      }
+    }
+  }
+  &__info-link {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    a:link,
+    a:visited {
+      margin-top: 1.4rem;
+      font-size: 1.6rem;
+      display: inline-block;
+      font-weight: 400;
+      color: $beige-secondary;
+      text-decoration: none;
+      opacity: 80%;
+      transition: all 0.4s;
+      border-bottom: 0.5px solid rgba($beige-secondary, 0.5);
+      margin-bottom: 1rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        font-size: 1.2rem;
+      }
+      @media only screen and (max-width: $bp-small) {
+        font-size: 1rem;
+      }
+    }
+    a:hover,
+    a:active {
+      opacity: 100%;
+    }
+  }
+  &__info-logo {
+    margin-right: 0.4rem;
+    font-size: 1.6rem;
+    opacity: 80%;
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 1rem;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+@mixin link-style {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 300;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  white-space: nowrap;
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 1.6rem;
+  }
+  @media only screen and (max-width: $bp-large) {
+    font-size: 1.4rem;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 1.2rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    font-size: 0.8rem;
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 0.6rem;
+  }
+}
+
+@mixin product-img-settings {
+  display: block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 40rem;
+  @media only screen and (max-width: $bp-large) {
+    height: 50rem;
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    height: 30rem;
+  }
+}
+
+@mixin overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($teal-dark-3, 0.4);
+  z-index: 1;
+}

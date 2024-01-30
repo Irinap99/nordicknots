@@ -1,0 +1,119 @@
+.header {
+  background-color: $beige-secondary;
+  width: 100vw;
+  padding: 3rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    padding: 0.5rem;
+  }
+
+  &__logo-box {
+    height: 4rem;
+    margin-right: 5rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-right: 2rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      height: 3rem;
+      margin-right: 2rem;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      margin-right: 1rem;
+    }
+    img {
+      max-width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: contain;
+    }
+  }
+
+  &__links {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    margin-right: 10rem;
+    gap: 2.5em;
+    @media only screen and (max-width: $bp-large) {
+      gap: 2rem;
+      margin-right: 0;
+      font-size: 1.4rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      gap: 1rem;
+      font-size: 1.2rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      gap: 0.5rem;
+      font-size: 1rem;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      gap: 0.4;
+      font-size: 0.8rem;
+    }
+  }
+
+  &__link a:link,
+  &__link a:visited {
+    @include link-style;
+  }
+  &__link a:hover,
+  &__link a:active {
+    color: $teal-main;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &__user-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 4rem;
+    @media only screen and (max-width: $bp-medium) {
+      gap: 1rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      gap: 0.6rem;
+      margin-left: 2rem;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      gap: 0.4rem;
+      margin-left: 1rem;
+    }
+  }
+  &__icon {
+    font-size: 3rem;
+    color: $teal-dark-2;
+    transition: all 0.5s;
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 2rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.8rem;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 1rem;
+    }
+  }
+  &__icon:hover,
+  &__icon:active {
+    cursor: pointer;
+    color: $teal-main;
+  }
+
+  &__user-link {
+    @include link-style;
+    transition: all 0.5s;
+  }
+  &__user-link:hover,
+  &__user-link:active {
+    cursor: pointer;
+    color: $teal-main;
+  }
+}

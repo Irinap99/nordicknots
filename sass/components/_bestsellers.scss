@@ -1,0 +1,173 @@
+.bestsellers {
+  display: flex;
+  padding: 6rem;
+  background-color: $teal-dark-3;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 3rem;
+    flex-direction: column;
+  }
+  &__heading h2 {
+    font-size: 12rem;
+    font-family: $font-secondary;
+    background-color: $teal-dark-3;
+    color: $beige-secondary;
+    font-weight: 200;
+    text-transform: uppercase;
+    padding-right: 4rem;
+    display: inline-block;
+    writing-mode: vertical-lr;
+    @media only screen and (max-width: $bp-large) {
+      font-size: 8rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 6rem;
+      writing-mode: unset;
+      margin: 2rem 0;
+    }
+    @media only screen and (max-width: $bp-small) {
+      font-size: 4rem;
+    }
+  }
+  &__heading:hover {
+    cursor: default;
+  }
+  &__gallery {
+    width: 100%;
+    display: flex;
+    gap: 6rem;
+    align-items: center;
+    justify-content: center;
+    @media only screen and (max-width: $bp-large) {
+      gap: 4rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+  }
+
+  &__img {
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--bottom {
+      flex-direction: column-reverse;
+      @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+      }
+    }
+  }
+
+  &__details {
+    background-color: $teal-dark-3;
+    width: 100%;
+
+    &--bottom {
+      h4 {
+        margin-top: 1rem;
+        @media only screen and (max-width: $bp-medium) {
+          margin-top: 0;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    h4 {
+      font-size: 3.5rem;
+      font-weight: 200;
+      font-family: $font-main;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      color: $beige-secondary;
+      @media only screen and (max-width: $bp-large) {
+        font-size: 2.5rem;
+      }
+    }
+    ul {
+      list-style: none;
+
+      margin-bottom: 2.5rem;
+    }
+    li {
+      letter-spacing: 1.1px;
+      font-size: 1.4rem;
+      font-weight: 400;
+      font-family: $font-main;
+      color: $beige-secondary;
+      @media only screen and (max-width: $bp-large) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  &__price {
+    margin-bottom: 1rem;
+    font-weight: 100;
+    font-family: $font-main;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    &--bottom {
+      margin-bottom: 0;
+      @media only screen and (max-width: $bp-medium) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    p {
+      font-size: 2rem;
+      display: inline-block;
+      font-weight: 500;
+      text-transform: uppercase;
+      background-color: $beige-secondary;
+      color: $teal-dark-3;
+      border: 1px solid $beige-secondary;
+      padding: 1rem;
+      transition: all 0.3s;
+      text-align: center;
+      margin-right: 1rem;
+      @media only screen and (max-width: $bp-large) {
+        font-size: 1.6rem;
+        padding: 0.5rem;
+      }
+    }
+
+    a:link,
+    a:visited {
+      font-size: 1.8rem;
+      display: inline-block;
+      font-weight: 400;
+
+      color: $beige-secondary;
+      text-decoration: none;
+      opacity: 80%;
+      transition: all 0.4s;
+      @media only screen and (max-width: $bp-large) {
+        font-size: 1.4rem;
+      }
+    }
+    a:hover,
+    a:active {
+      opacity: 100%;
+    }
+  }
+  &__price p:hover,
+  &__price p:visited {
+    cursor: pointer;
+    background-color: $beige-main;
+    color: $teal-dark-2;
+  }
+  &__icon {
+    margin-right: 0.4rem;
+    font-size: 1.6rem;
+  }
+}

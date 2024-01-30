@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/nordic-knots-192x192icon.png" />
+    <link rel="apple-touch-icon" href="img/nordic-knots-192x192icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500&family=Noto+Sans:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Nordic Knots</title>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo-box">
+        <a href="index.html"><img src="img/logo.png" alt="nordic cknots logo"/></a>
+      </div>
+      <ul class="header__links">
+        <li class="header__link"><a href="knit-fashion.html">Knit Fashion</a></li>
+        <li class="header__link"><a href="home-and-living.html">Home & Living</a></li>
+        <li class="header__link"><a href="heritage.html">Our heritage</a></li>
+      </ul>
+      <div class="header__user-links">
+        <a href="#" class="header__user-link login-btn">Login</a>
+        <i class="ph-thin ph-shopping-cart-simple header__icon"></i>
+      </div>
+    </header>
+    <div class="popup hidden">
+     <div class="popup__box">
+      <div class="popup__header">
+      <h3 class="popup__header-text">Login</h3>
+      <i class="ph-light ph-x popup__header-icon"></i>
+      </div>
+      <div class="popup__login">
+      <input class="popup__input" type="text" name="username" placeholder="Enter your email" required>
+      <input class="popup__input" type="password" name="password" placeholder="Password" required>
+      <a href="#" class="popup__forgotten">Forgot your password?</a>
+      <input class="popup__btn" type="submit" value="Login">
+      <p>Don't have an account? <a href="#">Sign up now!</a></p>
+    </div>
+     </div>
+    </div>
+    <section class="hero">
+      <div class="hero__container">
+        <div class="hero__text-box">
+          <img src="img/hero-banner.png" alt="hero mountain banner" class="hero__banner">
+          <span class="hero__new-collection"
+            >FW collection &Vert; 2023</span>
+          <h1 class="hero__heading">Softness Inspired by Scandinavia</h1>
+          <p class="hero__text">
+            Our Scandinavian knitwear brand was born from a deep appreciation
+            for the timeless beauty of Nordic aesthetics and the art of crafting
+            cozy, quality knits. Inspired by the serene landscapes and
+            traditions of the North, we embarked on a journey to create a brand
+            that encapsulates the essence of Scandinavian comfort and elegance.
+            With an unwavering commitment to craftsmanship, our brand was
+            founded to bring you knits that offer both warmth and style. From
+            the very first stitch to the finished piece, our love for this craft
+            shines through every design.
+          </p>
+          <ul class="hero__links">
+            <li class="hero__link"><a href="#">For Her</a></li>
+            <li class="hero__link"><a href="#">For Him</a></li>
+            <li class="hero__link"><a href="#">For Kids</a></li>
+            <li class="hero__link"><a href="#">Accessories</a></li>
+          </ul>
+         
+        </div>
+        <div class="hero__img-box">
+        </div>
+       
+      </div>
+    </section>
+    <section class="discount">
+      <div class="discount__offer">
+        <div class="discount__text-box">
+          <h2 class="discount__title">Exclusive first order discount</h2>
+          <p class="discount__amount">Get 20% on your first order!</p>
+          <p class="discount__newsletter">
+            Join our newsletter to receive updates, discound codes, news about
+            new collections and arrivals!
+          </p>
+          <div class="discount__email">
+            <form>
+              <input type="email" name="email"  placeholder="Enter your e-mail" required/>
+              <div class="discount__submit">
+                <button class="discount__btn" > Sign up!</button>
+              </div>
+          </div>
+          <div class="discount__checkbox">
+            <input type="checkbox" id="privacyCheckbox" required />
+            <label for="privacyCheckbox"
+              >I have read and accept the <a href="#" class="discount__checkbox-terms">terms of the privacy policy.</a></label
+            >
+            </form>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <section class="arrivals">
+      <h2 class="arrivals__title">Discover the hottest arrivals of 2023</h2>
+      <div class="arrivals__grid">
+        <div class="arrivals__product-element">
+     <div class="arrivals__product-img-box arrivals__product-img-box--1"></div>
+     <div class="arrivals__product-info">
+     <div class="arrivals__product-header">
+     <h3 class="arrivals__product-title">Lavender </h3>
+     <h3 class="arrivals__product-price"><p>60 eur</p> </h3>
+    </div>
+     <ul class="arrivals__product-detail-list">
+      
+      <li class="arrivals__product-detail">70% Wool</li>
+      <li class="arrivals__product-detail">30% Acrylic</li>
+      <li class="arrivals__product-detail">Round neckline & relaxed fit</li>
+     
+     </ul>
+     <div class="arrivals__product-sizes">
+      <div class="arrivals__size">XS</div>
+      <div class="arrivals__size">S</div>
+      <div class="arrivals__size sold-out">M</div>
+      <div class="arrivals__size sold-out">L</div>
+      <div class="arrivals__size">XL</div>
+      <div class="arrivals__add-cart"><i class="ph-thin ph-shopping-cart-simple arrivals__add-cart-icon"></i><a href="#"> </i>Add to Cart</a></div>
+    </div>
+    
+     </div>
+        </div>
+        <div class="arrivals__product-element">
+          <div class="arrivals__product-img-box arrivals__product-img-box--2"></div>
+          <div class="arrivals__product-info">
+            <div class="arrivals__product-header">
+            <h3 class="arrivals__product-title">Ivory </h3>
+            <h3 class="arrivals__product-price"> <p>50 eur</p> </h3>
+           </div>
+            <ul class="arrivals__product-detail-list">
+             
+             <li class="arrivals__product-detail">50% Cotton</li>
+             <li class="arrivals__product-detail">50% Polyester</li>
+             <li class="arrivals__product-detail">exceptional warmth</li>
+            
+            </ul>
+            <div class="arrivals__product-sizes">
+             <div class="arrivals__size">XS</div>
+             <div class="arrivals__size">S</div>
+             <div class="arrivals__size">M</div>
+             <div class="arrivals__size sold-out">L</div>
+             <div class="arrivals__size sold-out">XL</div>
+             <div class="arrivals__add-cart"><i class="ph-thin ph-shopping-cart-simple arrivals__add-cart-icon"></i><a href="#"> </i>Add to Cart</a></div>
+            </div>
+            </div>
+             </div>
+             <div class="arrivals__product-element">
+              <div class="arrivals__product-img-box arrivals__product-img-box--3"></div>
+              
+              <div class="arrivals__product-info">
+                <div class="arrivals__product-header">
+                <h3 class="arrivals__product-title">Forest </h3>
+                <h3 class="arrivals__product-price"> <p>55 eur</p> </h3>
+               </div>
+                <ul class="arrivals__product-detail-list">
+                 
+                 <li class="arrivals__product-detail">70% Merino Wool</li>
+                 <li class="arrivals__product-detail">30% Nylon</li>
+                 <li class="arrivals__product-detail">Cozy & comfortable fit</li>
+                
+                </ul>
+                <div class="arrivals__product-sizes">
+                 <div class="arrivals__size">XS</div>
+                 <div class="arrivals__size sold-out">S</div>
+                 <div class="arrivals__size">M</div>
+                 <div class="arrivals__size sold-out">L</div>
+                 <div class="arrivals__size">XL</div>
+                 <div class="arrivals__add-cart"><i class="ph-thin ph-shopping-cart-simple arrivals__add-cart-icon"></i><a href="#"> </i>Add to Cart</a></div>
+                </div>
+                </div>
+                 </div>
+                 <div class="arrivals__product-element">
+                  <div class="arrivals__product-img-box arrivals__product-img-box--4"></div>
+                  <div class="arrivals__product-info">
+                    <div class="arrivals__product-header">
+                    <h3 class="arrivals__product-title">Powder </h3>
+                    <h3 class="arrivals__product-price"> <p>40 eur </p> </h3>
+                   </div>
+                    <ul class="arrivals__product-detail-list">
+                     
+                     <li class="arrivals__product-detail">60% Cotton</li>
+                     <li class="arrivals__product-detail">40% Acrylic</li>
+                     <li class="arrivals__product-detail">Soft & comfortable fit</li>
+                    
+                    </ul>
+                    <div class="arrivals__product-sizes">
+                     <div class="arrivals__size">XS</div>
+                     <div class="arrivals__size">S</div>
+                     <div class="arrivals__size sold-out">M</div>
+                     <div class="arrivals__size sold-out">L</div>
+                     <div class="arrivals__size">XL</div>
+                     <div class="arrivals__add-cart"><i class="ph-thin ph-shopping-cart-simple arrivals__add-cart-icon"></i><a href="#"> </i>Add to Cart</a></div>
+                    </div>
+                    </div>
+                 
+                  </div>
+                     </div>
+      <div class="arrivals__btn-container">
+        <a href="knit-fashion.html" class="arrivals__btn-cta">Explore All Collections &rightarrow;</a>
+      </div>
+    </section>
+    <section class="shop">
+      <div class="shop__container">
+        <div class="shop__left">
+          <div class="shop__btn"><a href="#">Shop women</a></div>
+          <div class="shop__overlay"></div>
+        </div>
+        <div class="shop__right">
+          <div class="shop__btn"><a href="#">Shop men</a></div>
+          <div class="shop__overlay"></div>
+        </div>
+      </div>
+      <!-- <div class="collections__btn-container">
+        <a href="#" class="collections__btn-cta">Explore All collections &rightarrow;</a>
+      </div> -->
+    </section>
+    <footer class="footer">
+      <div class="footer__container">
+      <div class="footer__left-box">
+        <img src="img/logo-footer.png" alt="nordic knots footer logo" class="footer__img">
+        <div class="footer__icon-box">
+          <a href="#">
+        <i class="ph-light ph-instagram-logo footer__icon"></i></a>
+         <a href="#"><i class="ph-light ph-facebook-logo footer__icon"></i></a> </div>
+         <div class="footer__copyright">  <p>
+          &copy; Putinei Andreea-Irina 2024 | Website design, website template
+          and logo design were made by Putinei Andreea-Irina.</p> </div>
+      </div>
+      <ul class="footer__link-box">
+        <li><a class="footer__link" href="#">About Us</a></li>
+        <li><a class="footer__link" href="#">Collections</a></li>
+        <li><a class="footer__link" href="#">Stores & Showroom</a></li>
+        <li><a class="footer__link" href="#">Costumer Service</a></li>
+        <li><a class="footer__link" href="#">Shipping & Delivery</a></li>
+        <li><a class="footer__link" href="#">Terms & Conditions</a></li>
+      </ul>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+//Color pallete
+$beige-main: #f0ebe3;
+$beige-light: #f3efe9;
+$beige-secondary: #e4dccf;
+$teal-main: #7d9d9c;
+$teal-dark: #576f72;
+$teal-dark-2: #3d4e50;
+$teal-dark-3: #252f2f;
+$grey: #d4d4d4;
+$grey-dark: #737373;
+
+//Fonts
+
+$font-main: "Barlow", sans-serif;
+$font-secondary: "Noto Sans", sans-serif;
+
+//Starting settings:
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: $beige-secondary;
+  font-family: $font-secondary;
+  line-height: 1;
+  font-weight: 300;
+  color: $teal-dark;
+}
+
+h1 {
+  font-weight: 300;
+}
+// Animations
+
+@keyframes Fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes Opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// Media queries - breakpoints
+
+$bp-largest: 1274px;
+$bp-large: 950px;
+$bp-medium: 705px;
+$bp-small: 565px;
+$bp-smallest: 350px;
